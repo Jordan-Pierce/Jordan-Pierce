@@ -1,11 +1,12 @@
+![](https://komarev.com/ghpvc/?username=Jordan-Pierce)  
 <a href="https://github.com/anuraghazra/github-readme-stats">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=Jordan-Pierce&theme=prussian&hide_rank=True" />
 </a>
 <a href="https://github.com/anuraghazra/convoychat">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Jordan-Pierce&theme=prussian&layout=compact&langs_count=8&card_width=200" />
 </a>
-
 [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=Jordan-Pierce&theme=prussian&date_format=M%20j%5B%2C%20Y%5D&exclude_days=Sun%2CSat&card_width=805)]()
+
 
 <!--
 **Jordan-Pierce/Jordan-Pierce** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
