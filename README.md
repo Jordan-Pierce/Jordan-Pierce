@@ -1,5 +1,5 @@
 <h2> 
-  < Heyo, I'm <a href="https://www.linkedin.com/in/jordanpatrickpierce/" target="_blank"> Jordan Pierce</a>; I do cool stuff with coral reefs and code/> 
+  < Heyo, I'm <a href="https://www.linkedin.com/in/jordanpatrickpierce/" target="_blank"> Jordan Pierce</a>; I do cool stuff with coral reefs and computer vision/> 
   <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30" height="30"> 
 </h2>
 
