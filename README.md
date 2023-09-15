@@ -1,6 +1,6 @@
 <h2> 
   < Howdy, I'm <a href="https://www.linkedin.com/in/jordanpatrickpierce/" target="_blank"> Jordan Pierce</a>; I do cool stuff with coral reefs and computer vision/> 
-    <img src="https://thumbs.gfycat.com/UnripeAdoredGrayreefshark-max-1mb.gif" width="60" height="60"> 
+    <img src="https://github.com/Jordan-Pierce/Jordan-Pierce/blob/main/Figures/robot_1.gif?raw=true" width="60" height="60"> 
 
 
 </h2>
