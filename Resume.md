@@ -1,6 +1,5 @@
 # Jordan Pierce
-
-----
+-
 
 ## Contact Information
 - Phone: (512) 966-3635
@@ -10,14 +9,12 @@
 - LinkedIn: jordanpatrickpierce
 - YouTube: @JordanMakesMaps
 
----
 
 ## Summary
 A problem solver and challenge seeker to the core, I am a goal oriented and resourceful individual who is often 
 appreciated for having the ability to work independently with minimal oversight, and who consistently delivers as 
 promised.
 
----
 
 ## Education
 - **M.S.: Oceanography**
@@ -33,8 +30,7 @@ promised.
 - **Computer Science**
   - Texas A&M University - Corpus Christi - Corpus Christi, TX
   - 2011-09 - 2013-05
-
---- 
+ 
 
 ## Experience
 
@@ -98,8 +94,7 @@ June 2015 - July 2015
 - Led ground-truth mapping of dynamic nearshore environments using custom-made subsurface drogues equipped with GPS and Sonar.
 - Independently handled all data collection, calibration, and operation of scientific instruments for hydrographic research.
 - Created digital elevation models and 3D visualizations using ArcGIS software.
-  
----
+
 
 ## Research
 
@@ -118,8 +113,7 @@ June 2015 - July 2015
 - D.M. Baker, V. Yu, **J. Pierce**, V. Sheng, "Coral Reef Restoration - Is It Viable for Hong Kong?," The 2nd International Workshop on Eco-Shoreline Designs for Sustainable Coastal Development, University of Hong Kong, 2018.
 
 - **J. Pierce**, M. Smith, "A Preliminary Fabric Analysis on the Spatial Distribution of Artifacts from the Ryan-Harley Site (8JE1004)," Texas A&M University Student Research Week, 2016.
-
---- 
+ 
 
 ## Other Media Appearances
 
@@ -129,7 +123,6 @@ June 2015 - July 2015
 
 - You, Me & the Sea. Podcast. Hosted by Kaitlin Van Volkom and Isaiah. "Automating the Boring Stuff: Using A.I to Map Coral Reefs", September 2020. Featuring **J. Pierce**.
 
----
 
 ## Honors
 
@@ -142,7 +135,6 @@ June 2015 - July 2015
 - Texas A&M University, College of Geosciences – Academic Scholarship.
 - George & Barbara Bush Foundation – Academic Scholarship.
 
----
 
 ## Technologies (Often) Used
 
@@ -153,7 +145,6 @@ June 2015 - July 2015
 - Git, Azure ML Studio, Windows, Linux
 - Wheels, Fire, Printing Press, Microwaves
 
----
 
 ## Certifications
 
@@ -163,7 +154,6 @@ June 2015 - July 2015
 - American Academy of Underwater Sciences (AAUS)
 - National Speleological Society (NSS) - Cave Diving Section (CSS)
 
----
 
 ## References
 
