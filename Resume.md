@@ -6,7 +6,7 @@
 - Website: [www.JordanMakesMaps.com](https://www.jordanmakesmaps.com/cv)
 - GitHub: [Jordan-Pierce](https://www.Github.com/Jordan-Pierce)
 - LinkedIn: [JordanPatrickPierce](https://www.linkedin.com/in/jordanpatrickpierce/)
-- YouTube: [JordanMakesMaps](youtube.com/@jordanmakesmaps)
+- YouTube: [JordanMakesMaps](https://www.youtube.com/@jordanmakesmaps)
 
 
 ## Summary
