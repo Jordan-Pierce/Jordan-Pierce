@@ -1,5 +1,4 @@
 # Jordan Pierce
--
 
 ## Contact Information
 - Phone: (512) 966-3635
