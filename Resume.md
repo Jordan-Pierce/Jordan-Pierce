@@ -3,10 +3,10 @@
 ## Contact Information
 - Phone: (512) 966-3635
 - Email: JordanMakesMaps@gmail.com
-- Website: www.JordanMakesMaps.com
-- GitHub: github.com/Jordan-Pierce
-- LinkedIn: jordanpatrickpierce
-- YouTube: @JordanMakesMaps
+- Website: [www.JordanMakesMaps.com](https://www.jordanmakesmaps.com/cv)
+- GitHub: [Jordan-Pierce](https://www.Github.com/Jordan-Pierce)
+- LinkedIn: [JordanPatrickPierce](https://www.linkedin.com/in/jordanpatrickpierce/)
+- YouTube: [@JordanMakesMaps](youtube.com/@jordanmakesmaps)
 
 
 ## Summary
