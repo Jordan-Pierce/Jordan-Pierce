@@ -101,6 +101,21 @@ June 2015 - July 2015
 - Created digital elevation models and 3D visualizations using ArcGIS software.
 
 
+## Volunteer Experience
+
+### **Volunteer Diver**
+**Rrreefs**  
+*August 2022 - September 2022*
+
+Participated in a coral reef restoration workshop hosted by Phanor Montoya-Maya, Corales de Paz - Buceo con Propósito, and the rrreefs team. Learned about the plight of coral reefs, modern restoration practices, and the direction the field is moving towards. Gained hands-on experience in maintaining coral nurseries, micro-fragmentation, and coral out planting.
+
+### **ROV Video and Photographer Assistant**
+**National Oceanic & Atmospheric Administration (NOAA)**  
+*June 2015 - July 2015*
+
+NOAA's R/V Manta was conducting an environmental survey on an out of commission oil rig in the Gulf of Mexico near the east Flower Garden Banks. The mission was to conduct a biological survey on the rig's structure to identify biological diversity.
+
+
 ## Research
 
 - G. Pavoni, **J. Pierce**, C. Edwards, M. Corsini, V. Petrovic, P. Cignoni, "Integrating Widespread Coral Reef Monitoring Tools for Managing both Area and Point Annotations," ISPRS Technical Commission II Symposium, Las Vegas, Nevada, 2024.
