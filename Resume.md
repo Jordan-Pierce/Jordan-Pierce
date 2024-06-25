@@ -16,22 +16,28 @@ promised.
 
 
 ## Education
-- **M.S.: Oceanography**
-  - Focus: Computer Vision 
-  - University of New Hampshire - Durham, NH
-  - 2018-08 - 2020-12
 
-- **B.S.: Geographic Information Systems**
-  - Minor: Oceanography 
-  - Texas A&M University - College Station, TX
-  - 2013-08 - 2016-05
+### **M.S. in Oceanography**
+**University of New Hampshire** - Durham, NH  
+*August 2018 - December 2020*
 
-- **Computer Science**
-  - Texas A&M University - Corpus Christi - Corpus Christi, TX
-  - 2011-09 - 2013-05
+**Thesis**:
+- Automating the Boring Stuff: A Deep Learning and Computer Vision Workflow for Coral Reef Habitat Mapping
+
+### **B.S. in Geographic Information Systems**
+**Texas A&M University** - College Station, TX  
+*August 2013 - May 2016*
+
+**Practicums**:
+- Bathymetric Mapping of Playa Cocles, Costa Rica (On a College Student Budget)
+- Fabric Analysis on the Spatial Distribution of Artifacts from the Ryan-Harley Site
+
+### **Coursework in Computer Science**
+**Texas A&M University - Corpus Christi** - Corpus Christi, TX  
+*September 2011 - May 2013*
  
 
-## Experience
+## Professional Experience
 
 ### **AI Scientist**
 CSS Inc. (contracted to NOAA, NCCOS), Silver Spring, MD  

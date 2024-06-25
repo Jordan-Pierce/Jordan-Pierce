@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+h3 {
+    color: #555;
+    margin-top: 20px;
+    font-size: 1.25rem;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin-bottom: 0.5rem;
+}
+
+#contact a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Summary Section */
+#summary p {
+    text-align: justify;
+}
+
+/* Professional Experience Section */
+.experience {
+    margin-bottom: 40px;
+}
+
+.experience h3 {
+    margin-bottom: 5px;
+}
+
+.experience .company {
+    font-weight: bold;
+    color: #666;
+}
+
+.experience .date {
+    font-style: italic;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.experience ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+/* Education Section */
+.education {
+    margin-bottom: 40px;
+}
+
+.education h3 {
+    margin-bottom: 5px;
+}
+
+.education .institution {
+    font-weight: bold;
+    color: #666;
+}
+
+.education .location {
+    font-style: italic;
+    color: #777;
+}
+
+.education .date {
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.education .thesis,
+.education .practicums {
+    margin-top: 10px;
+}
+
+.education .thesis-title,
+.education .practicum-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.education .thesis-description,
+.education .practic
