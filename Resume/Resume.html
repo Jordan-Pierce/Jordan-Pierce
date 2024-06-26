@@ -4,270 +4,921 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan Pierce - Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+        :root {
+            --bg-color: #0c0c1d;
+            --grid-color: rgba(255, 255, 255, 0.1);
+            --sun-color-1: #ff6b6b;
+            --sun-color-2: #ff9ff3;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+            background-color: var(--bg-color);
+            color: #7fdbff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            text-shadow: 0 0 2px rgba(127, 219, 255, 0.3);
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                linear-gradient(transparent 0%, rgba(255, 107, 107, 0.2) 50%, transparent 100%),
+                radial-gradient(circle at 50% 150%, var(--sun-color-1), var(--sun-color-2), transparent 70%);
+            z-index: -2;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                linear-gradient(90deg, var(--grid-color) 1px, transparent 1px),
+                linear-gradient(0deg, var(--grid-color) 1px, transparent 1px);
+            background-size: 20px 20px;
+            transform-origin: 50% 50%;
+            animation: gridMove 15s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes gridMove {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(20px);
+            }
+        }
+
+        .container {
+            max-width: 1000px; /* Increased from 800px to 1000px */
+            margin: 50px auto;
+            background: rgba(2, 13, 25, 0.9);
+            box-shadow: 0 0 20px rgba(127, 219, 255, 0.2), 0 0 40px rgba(255, 105, 180, 0.2);
+            border: 2px solid #7fdbff;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                0deg,
+                transparent,
+                transparent,
+                #ff00ff,
+                #ff00ff
+            );
+            transform-origin: bottom right;
+            animation: animate 6s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(45deg, #002b36, #00404d, #002b36);
+            color: #7fdbff;
+            border-bottom: 2px solid #7fdbff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                0deg,
+                transparent,
+                transparent,
+                #ff00ff,
+                #ff00ff
+            );
+            transform-origin: bottom right;
+            animation: animate 6s linear infinite;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .header p {
+            margin: 10px 0 0;
+            font-size: 1.1em;
+            opacity: 0.8;
+            position: relative;
+        }
+
+        .section {
+            margin: 30px 0;
+            padding: 0 30px;
+        }
+
+        .section h2 {
+            color: #ff71ce;
+            border-bottom: 2px solid #ff71ce;
+            padding-bottom: 10px;
+            font-size: 1.6em;
+            text-transform: uppercase;
+        }
+
+        .section-content {
+            padding: 20px 0;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .contact-item {
+            flex: 1;
+            min-width: 150px;
+            background: rgba(0, 64, 77, 0.6);
+            padding: 10px;
+            border: 1px solid #7fdbff;
+            border-radius: 5px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: rgba(0, 90, 107, 0.8);
+            box-shadow: 0 0 15px rgba(127, 219, 255, 0.4), 0 0 30px rgba(255, 105, 180, 0.3);
+        }
+
+        .contact-item a {
+            color: #7fdbff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-item a img {
+            margin-right: 8px;
+            filter: invert(80%) sepia(32%) saturate(651%) hue-rotate(157deg) brightness(103%) contrast(101%);
+        }
+
+        .contact-handle {
+            font-size: 0.9em;
+            color: #5fc0ce;
+        }
+
+        .technologies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+        }
+
+        .technology-item {
+            border: 1px solid #7fdbff;
+            padding: 10px;
+            border-radius: 5px;
+            background: linear-gradient(45deg, rgba(2, 43, 54, 0.7), rgba(0, 64, 77, 0.7));
+            box-shadow: 0 0 10px rgba(127, 219, 255, 0.2);
+            color: #01cdfe;
+            font-size: 0.9em;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .technology-item:hover {
+            background: linear-gradient(45deg, rgba(0, 64, 77, 0.7), rgba(2, 43, 54, 0.7));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(127, 219, 255, 0.3);
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+            border: 1px solid #7fdbff;
+            padding: 15px;
+            border-radius: 5px;
+            background: linear-gradient(45deg, rgba(2, 43, 54, 0.7), rgba(0, 64, 77, 0.7));
+            box-shadow: 0 0 10px rgba(127, 219, 255, 0.2);
+        }
+
+        .experience-item h3 {
+            color: #01cdfe;
+            margin-bottom: 5px;
+            font-size: 1.3em;
+        }
+
+        .education-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .education-location {
+            font-weight: bold;
+            color: #5fc0ce;
+        }
+
+        .education-date {
+            color: #5fc0ce;
+            font-style: italic;
+        }
+
+        .education-gpa {
+        font-size: 0.9em;
+        color: #5fc0ce;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+        .experience-item p {
+            margin: 5px 0;
+        }
+
+        .experience-item ul {
+            margin-top: 5px;
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        .experience-item ul li::before {
+            content: "> ";
+            color: #ff71ce;
+        }
+
+        .experience-item h3 {
+            margin-bottom: 5px;
+            color: #01cdfe;
+            font-size: 1.3em;
+        }
+
+        .experience-employer {
+            margin-bottom: 5px;
+            color: #ff71ce;
+            font-size: 1.1em;
+        }
+
+        .experience-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        .experience-location {
+            color: #5fc0ce;
+        }
+
+        .experience-date {
+            color: #5fc0ce;
+            font-style: italic;
+        }
+
+        .experience-item ul {
+            margin-top: 10px;
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        .experience-item ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 5px;
+        }
+
+        .experience-item ul li::before {
+            content: ">";
+            position: absolute;
+            left: 0;
+            color: #ff71ce;
+        }
+
+        .research-item {
+            margin-bottom: 20px;
+            border: 1px solid #7fdbff;
+            padding: 15px;
+            border-radius: 5px;
+            background: linear-gradient(45deg, rgba(2, 43, 54, 0.7), rgba(0, 64, 77, 0.7));
+            box-shadow: 0 0 10px rgba(127, 219, 255, 0.2);
+        }
+
+        .research-item h3 {
+            color: #01cdfe;
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+
+        .research-authors {
+            color: #ff71ce;
+            font-size: 1em;
+            margin-bottom: 5px;
+        }
+
+        .research-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .research-venue {
+            color: #5fc0ce;
+            font-weight: bold;
+        }
+
+        .research-date {
+            color: #5fc0ce;
+            font-style: italic;
+        }
+
+        .research-location {
+            color: #7fdbff;
+            font-size: 0.9em;
+        }
+
+        .media-item {
+        margin-bottom: 20px;
+        border: 1px solid #7fdbff;
+        padding: 15px;
+        border-radius: 5px;
+        background: linear-gradient(45deg, rgba(2, 43, 54, 0.7), rgba(0, 64, 77, 0.7));
+        box-shadow: 0 0 10px rgba(127, 219, 255, 0.2);
+    }
+
+        .media-item h3 {
+            color: #01cdfe;
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+
+        .media-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .media-venue {
+            color: #5fc0ce;
+            font-weight: bold;
+        }
+
+        .media-date {
+            color: #5fc0ce;
+            font-style: italic;
+        }
+
+        .media-type, .media-hosts {
+            color: #7fdbff;
+            font-size: 0.9em;
+        }
+
+        .honors-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .honor-item {
+            border: 1px solid #7fdbff;
+            padding: 15px;
+            border-radius: 5px;
+            background: linear-gradient(45deg, rgba(2, 43, 54, 0.7), rgba(0, 64, 77, 0.7));
+            box-shadow: 0 0 10px rgba(127, 219, 255, 0.2);
+        }
+
+        .honor-item h3 {
+            color: #01cdfe;
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+
+        .honor-employer {
+            color: #ff71ce;
+            font-size: .9em;
+            margin-bottom: 5px;
+        }
+
+        .honor-details {
+            font-size: 0.9em;
+            color: #7fdbff;
+        }
+
+        .honor-award {
+            font-weight: bold;
+        }
+
+
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .certification-item {
+            border: 1px solid #7fdbff;
+            padding: 10px;
+            border-radius: 5px;
+            background: linear-gradient(45deg, rgba(2, 43, 54, 0.7), rgba(0, 64, 77, 0.7));
+            box-shadow: 0 0 10px rgba(127, 219, 255, 0.2);
+            color: #01cdfe;
+            font-size: 0.9em;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .certification-item:hover {
+            background: linear-gradient(45deg, rgba(0, 64, 77, 0.7), rgba(2, 43, 54, 0.7));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(127, 219, 255, 0.3);
+        }
+
+    </style>
 </head>
 <body>
+
+
     <div class="container">
 
-        <header>
-            <h1>Jordan Pierce</h1>
-        </header>
+
+        <div class="header">
+            <h1>JORDAN PIERCE</h1>
+            <p>JordanMakesMaps@gmail.com • (512) 966-3635</p>
+        </div>
 
 
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <ul>
-                <li>Phone: (512) 966-3635</li>
-                <li>Email: JordanMakesMaps@gmail.com</li>
-                <li>Website: <a href="https://www.jordanmakesmaps.com/cv">www.JordanMakesMaps.com</a></li>
-                <li>GitHub: <a href="https://www.Github.com/Jordan-Pierce">Jordan-Pierce</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/jordanpatrickpierce/">JordanPatrickPierce</a></li>
-                <li>YouTube: <a href="https://www.youtube.com/@jordanmakesmaps/videos">JordanMakesMaps</a></li>
-            </ul>
-        </section>
-
-
-        <section id="summary">
-            <h2>Summary</h2>
-            <p>A problem solver and challenge seeker to the core, I am a goal oriented and resourceful individual who is often
-            appreciated for having the ability to work independently with minimal oversight, and who consistently delivers as
-            promised.</p>
-        </section>
-
-
-        <section id="education">
-            <h2>Education</h2>
-
-            <div class="education">
-                <h3>M.S. in Oceanography</h3>
-                <div class="institution">University of New Hampshire</div>
-                <div class="location">Durham, NH</div>
-                <div class="date">August 2018 - December 2020</div>
-                <div class="thesis">
-                    <div class="thesis-title">Thesis:</div>
-                    <div class="thesis-description">Automating the Boring Stuff: A Deep Learning and Computer Vision Workflow for Coral Reef Habitat Mapping</div>
+        <div class="section">
+            <h2>Social</h2>
+            <div class="section-content contact-info">
+                <div class="contact-item">
+                    <a href="https://www.jordanmakesmaps.com/about" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/1a237e/domain.png" alt="Website Icon" width="20" height="20">
+                        Website
+                    </a>
+                    <div class="contact-handle">JordanMakesMaps.com</div>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.Github.com/Jordan-Pierce" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/1a237e/github.png" alt="GitHub Icon" width="20" height="20">
+                        GitHub
+                    </a>
+                    <div class="contact-handle">@Jordan-Pierce</div>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.linkedin.com/in/jordanpatrickpierce/" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/1a237e/linkedin.png" alt="LinkedIn Icon" width="20" height="20">
+                        LinkedIn
+                    </a>
+                    <div class="contact-handle">@JordanPatrickPierce</div>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.youtube.com/@jordanmakesmaps/videos" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/1a237e/youtube.png" alt="YouTube Icon" width="20" height="20">
+                        YouTube
+                    </a>
+                    <div class="contact-handle">@JordanMakesMaps</div>
                 </div>
             </div>
+        </div>
 
-            <div class="education">
-                <h3>B.S. in Geographic Information Systems</h3>
-                <div class="institution">Texas A&M University</div>
-                <div class="location">College Station, TX</div>
-                <div class="date">August 2013 - May 2016</div>
-                <div class="practicums">
-                    <div class="practicum-title">Practicums:</div>
-                    <ul class="practicum-description">
+
+        <div class="section">
+            <h2>Summary</h2>
+            <div class="section-content">
+                <p>A problem solver and challenge seeker to the core, I am a goal oriented and resourceful individual who is often appreciated for having the ability to work independently with minimal oversight, and who consistently delivers as promised.</p>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <h2>Stack</h2>
+            <div class="section-content technologies-grid">
+                <div class="technology-item">Pytorch</div>
+                <div class="technology-item">Ultralytics</div>
+                <div class="technology-item">Supervision</div>
+                <div class="technology-item">Sckit-*</div>
+                <div class="technology-item">AutoDistill</div>
+                <div class="technology-item">Pandas</div>
+                <div class="technology-item">OpenCV</div>
+                <div class="technology-item">Keras</div>
+                <div class="technology-item">Selenium</div>
+                <div class="technology-item">ArcGIS</div>
+                <div class="technology-item">PDAL</div>
+                <div class="technology-item">GDAL</div>
+                <div class="technology-item">QGIS</div>
+                <div class="technology-item">LASTools</div>
+                <div class="technology-item">Metashape</div>
+                <div class="technology-item">Open3D</div>
+                <div class="technology-item">NeRF-Studio</div>
+                <div class="technology-item">Windows</div>
+                <div class="technology-item">Linux</div>
+                <div class="technology-item">Git</div>
+                <div class="technology-item">The Wheel</div>
+
+            </div>
+        </div>
+
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="section-content">
+                <div class="experience-item">
+                    <h3>M.S. in Oceanography</h3>
+                    <div class="education-details">
+                        <span class="education-location">University of New Hampshire - Durham, NH</span>
+                        <span class="education-date">August 2018 - December 2020</span>
+                    </div>
+                    <p><strong>Thesis:</strong></p>
+                    <ul>
+                        <li>Automating the Boring Stuff: A Deep Learning and Computer Vision Workflow for Coral Reef Habitat Mapping</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>B.S. in Geographic Information Systems</h3>
+                    <div class="education-details">
+                        <span class="education-location">Texas A&M University - College Station, TX</span>
+                        <span class="education-date">August 2013 - May 2016</span>
+                    </div>
+                    <div class="education-gpa">Magna Cum Laude</div>
+                    <p><strong>Practicums:</strong></p>
+                    <ul>
                         <li>Bathymetric Mapping of Playa Cocles, Costa Rica (On a College Student Budget)</li>
                         <li>Fabric Analysis on the Spatial Distribution of Artifacts from the Ryan-Harley Site</li>
                     </ul>
                 </div>
+                <div class="experience-item">
+                    <h3>Coursework in Computer Science</h3>
+                    <div class="education-details">
+                        <span class="education-location">Texas A&M University - Corpus Christi - Corpus Christi, TX</span>
+                        <span class="education-date">September 2011 - May 2013</span>
+                    </div>
+                </div>
             </div>
-
-            <div class="education">
-                <h3>Coursework in Computer Science</h3>
-                <div class="institution">Texas A&M University - Corpus Christi</div>
-                <div class="location">Corpus Christi, TX</div>
-                <div class="date">September 2011 - May 2013</div>
-            </div>
-        </section>
+        </div>
 
 
-        <section id="professional-experience">
+        <div class="section">
             <h2>Professional Experience</h2>
-
-            <div class="experience">
-                <h3>AI Scientist</h3>
-                <div class="company">CSS Inc. (contracted to NOAA, NCCOS), Silver Spring, MD</div>
-                <div class="date">September 2022 - Present</div>
-                <ul>
-                    <li>Developed machine learning and computer vision solutions to improve annotation of underwater imagery across freshwater, shallow, mesophotic, and deep benthic habitats.</li>
-                    <li>Worked between IT and scientists to build and maintain code repositories at the division level.</li>
-                    <li>Created the CoralNet-Toolbox to enhance analytic workflows for CoralNet users, and actively contribute to the open-source annotation software TagLab.</li>
-                    <li>Developed "Click-a-Coral", a project for crowdsourcing object detection annotations of deep benthic ROV imagery data.</li>
-                    <li>Optimized annotation processes using image classification, object detection, and instance segmentation to reduce manual labor and increase data processing efficiency.</li>
-                </ul>
+            <div class="section-content">
+                <div class="experience-item">
+                    <h3>AI Scientist</h3>
+                    <div class="experience-employer">@ CSS Inc. (Contracted to NOAA)</div>
+                    <div class="experience-details">
+                        <span class="experience-location">Silver Spring, MD</span>
+                        <span class="experience-date">September 2022 - Present</span>
+                    </div>
+                    <ul>
+                        <li>Utilizing machine learning and computer vision algorithms to reduce the manual annotation of underwater imagery across diverse aquatic environments, from freshwater to deep benthic habitats.</li>
+                        <li>Developed the CoralNet-Toolbox, augmenting the analytical workflow for CoralNet users, while making contributions to TagLab, an open-source annotation software.</li>
+                        <li>Implemented and maintain Click-a-Coral, a crowdsourcing annotation project for object detection in deep benthic ROV imagery.</li>
+                        <li>Perform cross-functional collaboration with IT professionals and scientists to establish and maintain code repositories at the division level.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Computer Vision / Machine Learning Engineer</h3>
+                    <div class="experience-employer">@ Terradepth</div>
+                    <div class="experience-details">
+                        <span class="experience-location">Austin, TX</span>
+                        <span class="experience-date">November 2020 - June 2022</span>
+                    </div>
+                    <ul>
+                        <li>Spearheaded the implementation of machine learning algorithms for object detection and semantic segmentation on 2D and 3D sonar data for automatic target recognition (ATR).</li>
+                        <li>Led the efforts to create a large, well-curated dataset of ~50K labeled objects of interest within bathymetric (XYZ) sonar data.</li>
+                        <li>Created pipelines in Python for efficient processing of large-scale, unstructured geospatial data, including downloading, wrangling, and conversion.</li>
+                        <li>Collaborated on a small team to develop Absolute Ocean, a web-based ocean data viewing platform.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Graduate Researcher</h3>
+                    <div class="experience-employer">@ The Center For Coastal And Ocean Mapping</div>
+                    <div class="experience-details">
+                        <span class="experience-location">Durham, NH</span>
+                        <span class="experience-date">August 2018 - December 2020</span>
+                    </div>
+                    <ul>
+                        <li>Enhanced a semantic segmentation algorithm for automated annotation of coral reef quadrat survey images, achieving 8x faster performance compared to existing state-of-the-art method.</li>
+                        <li>Designed workflows for quantifying marine life community composition using segmented 2D images with 3D photogrammetric models.</li>
+                        <li>Implemented computer vision algorithms to detect marine life and anomalies in benthic and backscatter imagery data.</li>
+                        <li>Communicated research findings to diverse audiences through 3-Minute Thesis competition, online podcasts, academic conferences, and multiple publications.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Research Assistant II</h3>
+                    <div class="experience-employer">@ The University of Hong Kong</div>
+                    <div class="experience-details">
+                        <span class="experience-location">Hong Kong SAR</span>
+                        <span class="experience-date">January 2018 - August 2018</span>
+                    </div>
+                    <ul>
+                        <li>Developed prototype and proposal for structurally complex artificial reefs, securing USD ~200K in local government funding for a pilot study.</li>
+                        <li>Explored 3D modeling techniques including LiDAR and Structure-from-Motion photogrammetry to quantify coral reef structural complexity.</li>
+                        <li>Contributed to proof-of-concept deep learning algorithm using image classification to combat illicit trade of endangered species of sharks.</li>
+                        <li>Participated in scientific dive team, utilizing GIS and image analysis software (ImageJ, CPCe, CoralNet) to assess long-term health of outplanted coral specimens.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>English Language Teacher</h3>
+                    <div class="experience-employer">@ International Personnel Training Centre</div>
+                    <div class="experience-details">
+                        <span class="experience-location">Shenzhen, China</span>
+                        <span class="experience-date">February 2017 - January 2018</span>
+                    </div>
+                    <ul>
+                        <li>Adapted teaching methods to accommodate diverse learning styles and language proficiency levels.</li>
+                        <li>Delivered lectures to classes of 60 high school students, improving their English language proficiency.</li>
+                        <li>Designed and implemented ESL curriculum focused on enhancing students' public speaking and dialogue skills.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Geographic Information Systems Intern</h3>
+                    <div class="experience-employer">@ The Center for the Study of the First Americans</div>
+                    <div class="experience-details">
+                        <span class="experience-location">College Station, TX</span>
+                        <span class="experience-date">August 2015 - July 2016</span>
+                    </div>
+                    <ul>
+                        <li>Performed spatial analysis of underwater artifacts using ArcGIS software.</li>
+                        <li>Conducted artifact excavation, curation, and digitization using photogrammetry and LiDAR technologies.</li>
+                        <li>Presented research findings at multiple undergraduate conferences, receiving awards for each presentation.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Hydrographic Research Intern</h3>
+                    <div class="experience-employer">@ Texas A&M University, Geography Department</div>
+                    <div class="experience-details">
+                        <span class="experience-location">Puerto Viejo, Costa Rica</span>
+                        <span class="experience-date">June 2015 - July 2015</span>
+                    </div>
+                    <ul>
+                        <li>Independently handled all data collection, calibration, and operation of scientific instruments for hydrographic research.</li>
+                        <li>Led ground-truth mapping of dynamic nearshore environments using custom-made subsurface drogues equipped with GPS and Sonar.</li>
+                        <li>Created digital elevation models and 3D visualizations using ArcGIS software.</li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="experience">
-                <h3>Computer Vision / Machine Learning Engineer</h3>
-                <div class="company">Terradepth, Austin, TX</div>
-                <div class="date">November 2020 - June 2022</div>
-                <ul>
-                    <li>Collaborated on a small development team to develop Absolute Ocean, a web-based ocean data viewing platform.</li>
-                    <li>Created Python pipelines for efficient processing of large-scale, unstructured geospatial data, including downloading, wrangling, and conversion.</li>
-                    <li>Wrote scripts to assist in automating the processing of bathymetry and side-scan sonar data.</li>
-                    <li>Assisted in the design and implementation of a PostgreSQL (w/ PostGIS) database using Python SQLAlchemy.</li>
-                    <li>Led a small team of talented researchers to spearhead the implementation of machine learning algorithms for object detection and semantic segmentation on 2D and 3D sonar data for automatic target recognition (ATR).</li>
-                    <li>Developed a large, well-curated dataset of labeled objects of interest (~50K samples) within sonar data to be used for machine learning applications.</li>
-                </ul>
-            </div>
-
-            <div class="experience">
-                <h3>Graduate Researcher</h3>
-                <div class="company">The Center For Coastal And Ocean Mapping, Durham, NH</div>
-                <div class="date">August 2018 - December 2020</div>
-                <ul>
-                    <li>Enhanced machine learning algorithms for automated annotation of coral reef quadrat survey images, achieving 8x faster performance compared to state-of-the-art methods.</li>
-                    <li>Designed workflows for quantifying marine life community composition using classification of 2D images and 3D photogrammetric models.</li>
-                    <li>Developed deep learning and computer vision algorithms to detect marine life and anomalies in benthic and backscatter imagery data.</li>
-                    <li>Participated on a scientific dive team that collected imagery data of kelp beds and coral patch reefs.</li>
-                    <li>Communicated research findings to diverse audiences through 3-Minute Thesis competition, online podcasts, academic conferences, and multiple publications.</li>
-                </ul>
-            </div>
-
-            <div class="experience">
-                <h3>Research Assistant II</h3>
-                <div class="company">The University of Hong Kong, Hong Kong SAR</div>
-                <div class="date">January 2018 - August 2018</div>
-                <ul>
-                    <li>Developed prototype and proposal for structurally complex artificial reefs, securing USD 200K in local government funding for a pilot study.</li>
-                    <li>Explored 3D modeling techniques including LiDAR and Structure-from-Motion photogrammetry to quantify coral reef structural complexity.</li>
-                    <li>Contributed to proof-of-concept deep learning algorithms for image classification to combat illicit trade of endangered species of sharks.</li>
-                    <li>Participated in scientific dive team, utilizing GIS and image analysis software (ImageJ, CPCe, CoralNet) to assess long-term health of outplanted coral specimens.</li>
-                </ul>
-            </div>
-
-            <div class="experience">
-                <h3>English Language Teacher</h3>
-                <div class="company">International Personnel Training Centre, Shenzhen, China</div>
-                <div class="date">February 2017 - January 2018</div>
-                <ul>
-                    <li>Designed and implemented ESL curriculum focused on enhancing students' public speaking and dialogue skills.</li>
-                    <li>Delivered lectures to classes of 60 high school students, improving their English language proficiency.</li>
-                    <li>Adapted teaching methods to accommodate diverse learning styles and language proficiency levels.</li>
-                </ul>
-            </div>
-
-            <div class="experience">
-                <h3>Geographic Information Systems Intern</h3>
-                <div class="company">The Center for the Study of the First Americans, College Station, TX</div>
-                <div class="date">August 2015 - July 2016</div>
-                <ul>
-                    <li>Conducted artifact excavation, curation, and digitization using photogrammetry and LiDAR technologies.</li>
-                    <li>Performed spatial analysis of underwater artifacts using ArcGIS software.</li>
-                    <li>Presented research findings at multiple undergraduate conferences, receiving awards for each presentation.</li>
-                </ul>
-            </div>
-
-            <div class="experience">
-                <h3>Hydrographic Research Intern</h3>
-                <div class="company">Texas A&M University, Geography Department, Puerto Viejo, Costa Rica</div>
-                <div class="date">June 2015 - July 2015</div>
-                <ul>
-                    <li>Led ground-truth mapping of dynamic nearshore environments using custom-made subsurface drogues equipped with GPS and Sonar.</li>
-                    <li>Independently handled all data collection, calibration, and operation of scientific instruments for hydrographic research.</li>
-                    <li>Created digital elevation models and 3D visualizations using ArcGIS software.</li>
-                </ul>
-            </div>
-        </section>
+        </div>
 
 
-        <section id="volunteer-experience">
+        <div class="section">
             <h2>Volunteer Experience</h2>
-
-            <div class="volunteer-role">
-                <h3>Volunteer Diver</h3>
-                <div class="organization">Rrreefs</div>
-                <div class="date">August 2022 - September 2022</div>
-                <div class="description">
-                    <p>Participated in a coral reef restoration workshop hosted by Phanor Montoya-Maya, Corales de Paz - Buceo con Propósito, and the rrreefs team. Learned about the plight of coral reefs, modern restoration practices, and the direction the field is moving towards. Gained hands-on experience in maintaining coral nurseries, micro-fragmentation, and coral out planting.</p>
+            <div class="section-content">
+                <div class="experience-item">
+                    <h3>SCUBA Diver</h3>
+                    <div class="experience-employer">@ Rrreefs</div>
+                    <div class="experience-details">
+                        <span class="experience-location">San Andreas, Columbia</span>
+                        <span class="experience-date">August 2022 - September 2022</span>
+                    </div>
+                    <ul>
+                        <li>Engaged in an intensive coral reef restoration workshop led by Phanor Montoya-Maya, Corales de Paz - Buceo con Propósito, and the Rrreefs team.  We learned techniques in coral nursery maintenance, micro-fragmentation, and outplanting to advance marine ecosystem preservation efforts.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>ROV Video and Photographer Assistant</h3>
+                    <div class="experience-employer">@ National Oceanic & Atmospheric Administration (NOAA)</div>
+                    <div class="experience-details">
+                        <span class="experience-location">Gulf of Mexico</span>
+                        <span class="experience-date">June 2015 - July 2015</span>
+                    </div>
+                    <ul>
+                        <li>Contributed to NOAA's R/V Manta expedition, conducting comprehensive biological surveys on a decommissioned oil rig near the East Flower Garden Banks, enhancing understanding of marine biodiversity in artificial reef ecosystems.</li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="volunteer-role">
-                <h3>ROV Video and Photographer Assistant</h3>
-                <div class="organization">National Oceanic & Atmospheric Administration (NOAA)</div>
-                <div class="date">June 2015 - July 2015</div>
-                <div class="description">
-                    <p>NOAA's R/V Manta was conducting an environmental survey on an out of commission oil rig in the Gulf of Mexico near the east Flower Garden Banks. The mission was to conduct a biological survey on the rig's structure to identify biological diversity.</p>
-                </div>
-            </div>
-
-        </section>
+        </div>
 
 
-        <section id="research">
+        <div class="section">
             <h2>Research</h2>
-                <ul>
-                    <li>G. Pavoni, <strong>J. Pierce</strong>, C. Edwards, M. Corsini, V. Petrovic, P. Cignoni, "Integrating Widespread Coral Reef Monitoring Tools for Managing both Area and Point Annotations," ISPRS Technical Commission II Symposium, Las Vegas, Nevada, 2024.</li>
+            <div class="section-content">
+                <div class="research-item">
+                    <h3>Integrating Widespread Coral Reef Monitoring Tools for Managing both Area and Point Annotations</h3>
+                    <div class="research-authors">G. Pavoni, <strong>J. Pierce</strong>, C. Edwards, M. Corsini, V. Petrovic, P. Cignoni</div>
+                    <div class="research-details">
+                        <span class="research-venue">ISPRS Technical Commission II Symposium</span>
+                        <span class="research-date">2024</span>
+                    </div>
+                    <div class="research-location">Las Vegas, Nevada</div>
+                </div>
 
-                    <li>S. Cook, S. Rojano, C. Edwards, M. Bollinger, <strong>J. Pierce</strong>, S. Viehman, "Standard Operating Procedures for the Use of Large-Area Imaging in Tropical Shallow Water Coral Reef Monitoring, Research and Restoration: Applications for Mission: Iconic Reefs Restoration in the Florida Keys National Marine Sanctuary," NOAA Technical Memorandum NOS NCCOS, April 2024.</li>
+                <div class="research-item">
+                    <h3>Standard Operating Procedures for the Use of Large-Area Imaging in Tropical Shallow Water Coral Reef Monitoring, Research and Restoration: Applications for Mission: Iconic Reefs Restoration in the Florida Keys National Marine Sanctuary</h3>
+                    <div class="research-authors">S. Cook, S. Rojano, C. Edwards, M. Bollinger, <strong>J. Pierce</strong>, S. Viehman</div>
+                    <div class="research-details">
+                        <span class="research-venue">NOAA Technical Memorandum NOS NCCOS</span>
+                        <span class="research-date">2024</span>
+                    </div>
+                </div>
 
-                    <li><strong>J. Pierce</strong>, Q. Iqbal, E. Martzial, "Absolute Ocean: A Cloud-Based Platform with Automatic Detection of Targets in Sonar Data," Canadian Hydrographic Conference (CHC2022), Gatineau-Ottawa, Canada, 2022.</li>
+                <div class="research-item">
+                    <h3>Absolute Ocean: A Cloud-Based Platform with Automatic Detection of Targets in Sonar Data</h3>
+                    <div class="research-authors"><strong>J. Pierce</strong>, Q. Iqbal, E. Martzial</div>
+                    <div class="research-details">
+                        <span class="research-venue">Canadian Hydrographic Conference (CHC2022)</span>
+                        <span class="research-date">2022</span>
+                    </div>
+                    <div class="research-location">Gatineau-Ottawa, Canada</div>
+                </div>
 
-                    <li><strong>J. Pierce</strong>, M. Butler, Y. Rzhanov, K. Lowell, J. Dijkstra, "Classifying 3D Models of Coral Reefs Using Structure-from-Motion and Multi-View Semantic Segmentation," Frontiers in Marine Science, April 2021.</li>
+                <div class="research-item">
+                    <h3>Classifying 3D Models of Coral Reefs Using Structure-from-Motion and Multi-View Semantic Segmentation</h3>
+                    <div class="research-authors"><strong>J. Pierce</strong>, M. Butler, Y. Rzhanov, K. Lowell, J. Dijkstra</div>
+                    <div class="research-details">
+                        <span class="research-venue">Frontiers in Marine Science</span>
+                        <span class="research-date">2021</span>
+                    </div>
+                </div>
 
-                    <li><strong>J. Pierce</strong>, Y. Rzhanov, K. Lowell, J. Dijkstra, "Reducing Annotation Times: Semantic Segmentation of Coral Reef Imagery," OCEANS 2020 MTS/IEEE U.S. Gulf Coast - Singapore, 2020.</li>
+                <div class="research-item">
+                    <h3>Reducing Annotation Times: Semantic Segmentation of Coral Reef Imagery</h3>
+                    <div class="research-authors"><strong>J. Pierce</strong>, Y. Rzhanov, K. Lowell, J. Dijkstra</div>
+                    <div class="research-details">
+                        <span class="research-venue">OCEANS 2020 MTS/IEEE U.S. Gulf Coast - Singapore</span>
+                        <span class="research-date">2020</span>
+                    </div>
+                </div>
 
-                    <li><strong>J. Pierce</strong>, "Automating the Boring Stuff: A Deep Learning and Computer Vision Workflow for Coral Reef Habitat Mapping," UNH Graduate Research Conference, 2020.</li>
+                <div class="research-item">
+                    <h3>Automating the Boring Stuff: A Deep Learning and Computer Vision Workflow for Coral Reef Habitat Mapping</h3>
+                    <div class="research-authors"><strong>J. Pierce</strong></div>
+                    <div class="research-details">
+                        <span class="research-venue">UNH Graduate Research Conference</span>
+                        <span class="research-date">2020</span>
+                    </div>
+                </div>
 
-                    <li>D.M. Baker, V. Yu, <strong>J. Pierce</strong>, V. Sheng, "Coral Reef Restoration - Is It Viable for Hong Kong?," The 2nd International Workshop on Eco-Shoreline Designs for Sustainable Coastal Development, University of Hong Kong, 2018.</li>
+                <div class="research-item">
+                    <h3>Coral Reef Restoration - Is It Viable for Hong Kong?</h3>
+                    <div class="research-authors">D.M. Baker, V. Yu, <strong>J. Pierce</strong>, V. Sheng</div>
+                    <div class="research-details">
+                        <span class="research-venue">The 2nd International Workshop on Eco-Shoreline Designs for Sustainable Coastal Development</span>
+                        <span class="research-date">2018</span>
+                    </div>
+                    <div class="research-location">University of Hong Kong</div>
+                </div>
 
-                    <li><strong>J. Pierce</strong>, M. Smith, "A Preliminary Fabric Analysis on the Spatial Distribution of Artifacts from the Ryan-Harley Site (8JE1004)," Texas A&M University Student Research Week, 2016</li>
-                </ul>
-        </section>
+                <div class="research-item">
+                    <h3>A Preliminary Fabric Analysis on the Spatial Distribution of Artifacts from the Ryan-Harley Site (8JE1004)</h3>
+                    <div class="research-authors"><strong>J. Pierce</strong>, M. Smith</div>
+                    <div class="research-details">
+                        <span class="research-venue">Texas A&M University Student Research Week</span>
+                        <span class="research-date">2016</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-        <section id="other-media-appearances">
+        <div class="section">
             <h2>Other Media Appearances</h2>
-            <ul>
-                <li>University of New Hampshire's 3-Minute Thesis Competition. Presentation. "Automating the Boring Stuff: Using A.I to Map Coral Reefs", April 2020. Featuring <strong>Jordan Pierce</strong>.</li>
-                <li>Fisheries and Oceans Canada (DFO). Podcast. Hosted by Andrew Cogswell and Catalina Gomez. "Image Annotation, Machine Learning & AI",  October 2020. Featuring <strong>J. Pierce</strong>.</li>
-                <li>You, Me & the Sea. Podcast. Hosted by Kaitlin Van Volkom and Isaiah. "Automating the Boring Stuff: Using A.I to Map Coral Reefs", September 2020. Featuring <strong>J. Pierce</strong>.</li>
-            </ul>
-        </section>
+            <div class="section-content">
+                <div class="media-item">
+                    <h3>Automating the Boring Stuff: Using A.I to Map Coral Reefs</h3>
+                    <div class="media-details">
+                        <span class="media-venue">University of New Hampshire's 3-Minute Thesis Competition</span>
+                        <span class="media-date">2020</span>
+                    </div>
+                    <div class="media-type">Presentation by Jordan Pierce</div>
+                </div>
+
+                <div class="media-item">
+                    <h3>Image Annotation, Machine Learning & AI</h3>
+                    <div class="media-details">
+                        <span class="media-venue">Fisheries and Oceans Canada (DFO)</span>
+                        <span class="media-date">2020</span>
+                    </div>
+                    <div class="media-hosts">Podcast Hosted by Andrew Cogswell and Catalina Gomez, Ft. Jordan Pierce</div>
+                </div>
+
+                <div class="media-item">
+                    <h3>Automating the Boring Stuff: Using A.I to Map Coral Reefs</h3>
+                    <div class="media-details">
+                        <span class="media-venue">You, Me & the Sea</span>
+                        <span class="media-date">2020</span>
+                    </div>
+                    <div class="media-hosts">Podcast Hosted by Kaitlin Van Volkom and Isaiah, Ft. Jordan Pierce</div>
+                </div>
+            </div>
+        </div>
 
 
-        <section id="honors">
+        <div class="section">
             <h2>Honors</h2>
-            <ul>
-                <li>OCEANS 2020 – Student Research Competition, Norman Miller Award, 1st Place.</li>
-                <li>University of New Hampshire's 3-Minute Thesis, 1st Place.</li>
-                <li>CCOM/JHC – Fully-funded Graduate Research Scholarship.</li>
-                <li>Texas A&M University Student Research Week, 2nd Place.</li>
-                <li>Texas A&M Anthropology Student Research Week, 2nd Place.</li>
-                <li>Society for Underwater Technology: Frontiers in Underwater Tech , 3rd Place.</li>
-                <li>Texas A&M University, College of Geosciences – Academic Scholarship.</li>
-                <li>George & Barbara Bush Foundation – Academic Scholarship.</li>
-            </ul>
-        </section>
+            <div class="section-content honors-grid">
+                <div class="honor-item">
+                    <h3>Student Research Competition</h3>
+                    <div class="honor-employer">@ OCEANS 2020 Conference</div>
+                    <div class="honor-details">
+                        <span class="honor-award">Awarded 1st Place 🥇</span>
+                    </div>
+                    <div class="honor-details">
+                        <span class="honor-award">Norman Miller Prize 🎓</span>
+                    </div>
+                </div>
+                <div class="honor-item">
+                    <h3>3-Minute Thesis Competition</h3>
+                    <div class="honor-employer">@ University of New Hampshire</div>
+                    <div class="honor-details">
+                        <span class="honor-award">Awarded 1st Place 🥇</span>
+                    </div>
+                </div>
+                <div class="honor-item">
+                    <h3>Academic Scholarship</h3>
+                    <div class="honor-employer">@ Center for Coastal and Ocean Mapping</div>
+                    <div class="honor-details">
+                        <span class="honor-award">Fully-funded 🎓</span>
+                    </div>
+                </div>
+                <div class="honor-item">
+                    <h3>Student Research Week</h3>
+                    <div class="honor-employer">@ Texas A&M University</div>
+                    <div class="honor-details">
+                        <span class="honor-award">Awarded 2nd Place 🥈</span>
+                    </div>
+                </div>
+                <div class="honor-item">
+                    <h3>Student Research Week</h3>
+                    <div class="honor-employer">@ Texas A&M University, Anthropology Department</div>
+                    <div class="honor-details">
+                        <span class="honor-award">Awarded 2nd Place 🥈</span>
+                    </div>
+                </div>
+                <div class="honor-item">
+                    <h3>Frontiers in Underwater Technology</h3>
+                    <div class="honor-employer">@ Society for Underwater Technology</div>
+                    <div class="honor-details">
+                        <span class="honor-award">Awarded 3rd Place 🥉</span>
+                    </div>
+                </div>
+                <div class="honor-item">
+                    <h3>Academic Scholarship</h3>
+                    <div class="honor-employer">@ Texas A&M University, College of Geosciences</div>
+                    <div class="honor-details">
+                        <span class="honor-award">Recipient 🎓</span>
+                    </div>
+                </div>
+                <div class="honor-item">
+                    <h3>Academic Scholarship</h3>
+                    <div class="honor-employer">@ George & Barbara Bush Foundation</div>
+                    <div class="honor-details">
+                        <span class="honor-award">Recipient 🎓</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-        <section id="technologies">
-            <h2>Technologies (Often) Used</h2>
-            <ul>
-                <li>Pytorch, Keras, Tensorflow, Sckit-*</li>
-                <li>Ultralytics, Supervision, AutoDistill</li>
-                <li>Metashape, Open3D, NeRF-Studios</li>
-                <li>ArcGIS, PDAL, GDAL, QGIS, LASTools</li>
-                <li>Git, Azure ML Studio, Windows, Linux</li>
-                <li>Wheels, Fire, Printing Press, Microwaves</li>
-            </ul>
-        </section>
-
-
-        <section id="certifications">
+        <div class="section">
             <h2>Certifications</h2>
-            <ul>
-                <li>PADI Open, Advanced, and Rescue Diver</li>
-                <li>NAUI Master Diver</li>
-                <li>SSI Nitrox Diver</li>
-                <li>American Academy of Underwater Sciences (AAUS)</li>
-                <li>National Speleological Society (NSS) - Cave Diving Section (CSS)</li>
-            </ul>
-        </section>
-
-
-        <section id="references">
-            <h2>References</h2>
-            <ul>
-                <li>Tim Battista</li>
-                <li>Shay Viehman</li>
-                <li>Clint Edwards</li>
-                <li>Jennifer Dijkstra</li>
-                <li>Joe Wolfel</li>
-            </ul>
-        </section>
+            <div class="section-content certifications-grid">
+                <div class="certification-item">PADI Open Water Diver</div>
+                <div class="certification-item">PADI Advanced Diver</div>
+                <div class="certification-item">PADI Rescue Diver</div>
+                <div class="certification-item">NAUI Master Diver</div>
+                <div class="certification-item">SSI Nitrox Diver</div>
+                <div class="certification-item">AAUS Scientific Diver</div>
+                <div class="certification-item">NSS Cavern Diver</div>
+                <div class="certification-item">Red Cross Lifeguard</div>
+            </div>
+        </div>
 
     </div>
 </body>
