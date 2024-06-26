@@ -1,5 +1,5 @@
-<h2 style="font-size: 1.5rem;">
-  Howdy, I'm <a href="https://www.linkedin.com/in/jordanpatrickpierce/" target="_blank">Jordan Pierce</a>; I do cool stuff with coral reefs and computer vision
+<h2 style="font-size: 1.0rem;">
+  < Howdy, I'm <a href="https://www.linkedin.com/in/jordanpatrickpierce/" target="_blank">Jordan Pierce</a>; I do cool stuff with coral reefs and computer vision >
   <img src="https://github.com/Jordan-Pierce/Jordan-Pierce/blob/main/Figures/robot_2.gif?raw=true" width="60" height="60">
 </h2>
 
