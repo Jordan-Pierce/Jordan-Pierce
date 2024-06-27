@@ -374,13 +374,13 @@
         }
 
         .media-item {
-        margin-bottom: 20px;
-        border: 1px solid #7fdbff;
-        padding: 15px;
-        border-radius: 5px;
-        background: linear-gradient(45deg, rgba(2, 43, 54, 0.7), rgba(0, 64, 77, 0.7));
-        box-shadow: 0 0 10px rgba(127, 219, 255, 0.2);
-    }
+            margin-bottom: 20px;
+            border: 1px solid #7fdbff;
+            padding: 15px;
+            border-radius: 5px;
+            background: linear-gradient(45deg, rgba(2, 43, 54, 0.7), rgba(0, 64, 77, 0.7));
+            box-shadow: 0 0 10px rgba(127, 219, 255, 0.2);
+        }
 
         .media-item h3 {
             color: #01cdfe;
@@ -471,12 +471,82 @@
             box-shadow: 0 5px 15px rgba(127, 219, 255, 0.3);
         }
 
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.7;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .star {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #ffffff, #ff00ff);
+            box-shadow:
+                0 0 5px #ff00ff,
+                0 0 10px #ff00ff,
+                0 0 20px #ff00ff,
+                0 0 40px #ff00ff;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        .star:hover {
+            transform: scale(1.5);
+            box-shadow:
+                0 0 10px #ff00ff,
+                0 0 20px #ff00ff,
+                0 0 40px #ff00ff,
+                0 0 80px #ff00ff;
+            animation: none;
+        }
+
+        #star1 { top: 10%; left: 5%; animation-delay: 0s; }
+        #star2 { top: 30%; right: 5%; animation-delay: 0.25s; }
+        #star3 { bottom: 20%; left: 8%; animation-delay: 0.5s; }
+        #star4 { top: 50%; right: 7%; animation-delay: 0.75s; }
+        #star5 { bottom: 10%; right: 10%; animation-delay: 1s; }
+        #star6 { top: 70%; left: 3%; animation-delay: 1.25s; }
+        #star7 { top: 5%; right: 15%; animation-delay: 1.5s; }
+        #star8 { bottom: 40%; left: 2%; animation-delay: 1.75s; }
+
+        /* Unique color for each star */
+        #star1 { background: radial-gradient(circle at 30% 30%, #ffffff, #ff00ff); box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff; }
+        #star2 { background: radial-gradient(circle at 30% 30%, #ffffff, #00ffff); box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff; }
+        #star3 { background: radial-gradient(circle at 30% 30%, #ffffff, #ff00ff); box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff; }
+        #star4 { background: radial-gradient(circle at 30% 30%, #ffffff, #00ffff); box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff; }
+        #star5 { background: radial-gradient(circle at 30% 30%, #ffffff, #ff00ff); box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff; }
+        #star6 { background: radial-gradient(circle at 30% 30%, #ffffff, #00ffff); box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff; }
+        #star7 { background: radial-gradient(circle at 30% 30%, #ffffff, #ff00ff); box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff; }
+        #star8 { background: radial-gradient(circle at 30% 30%, #ffffff, #00ffff); box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff; }
+
     </style>
 </head>
 <body>
 
 
     <div class="container">
+
+        <a href="https://www.unh.edu/unhtoday/2020/10/double-win" target="_blank"><div id="star1" class="star"></div></a>
+        <a href="https://youtu.be/okHumhLohLk?feature=shared" target="_blank"><div id="star2" class="star"></div></a>
+        <a href="https://www.youtube.com/watch?v=3dMo2NO1iXQ" target="_blank"><div id="star3" class="star"></div></a>
+        <a href="https://www.oceansstudentpostercompetition.org/images/sp-gulf-coast-first-thumb.png" target="_blank"><div id="star4" class="star"></div></a>
+        <a href="https://youtu.be/KdJs-1g-BCA" target="_blank"><div id="star5" class="star"></div></a>
+        <a href="https://www.jordanmakesmaps.com/gallery" target="_blank"><div id="star6" class="star"></div></a>
+        <a href="https://media.unh.edu/media/Automating+the+Boring+StuffA+Using+A.I.+to+Map+Coral+Reefs/1_xogip3of/159518521" target="_blank"><div id="star7" class="star"></div></a>
+        <a href="https://github.com/Jordan-Pierce/SfM_Back_Projection" target="_blank"><div id="star8" class="star"></div></a>
 
 
         <div class="header">
@@ -720,6 +790,17 @@
                     </div>
                     <ul>
                         <li>Contributed to NOAA's R/V Manta expedition, conducting comprehensive biological surveys on a decommissioned oil rig near the East Flower Garden Banks, enhancing understanding of marine biodiversity in artificial reef ecosystems.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>SCUBA Teaching Assistant</h3>
+                    <div class="experience-employer">@ Texas A&M University, Dive Locker</div>
+                    <div class="experience-details">
+                        <span class="experience-location">College Station, Texas</span>
+                        <span class="experience-date">August 2015 - May 2016</span>
+                    </div>
+                    <ul>
+                        <li>Served as a teaching assistant on a dive team under PADI instructor James Woosely, supporting student divers in obtaining their Open Water certifications. As TAs provided in-water assistance to small groups of students during confined and open water training dives, demonstrated proper scuba techniques, monitored for safety, and offered corrective guidance. We also assisted with equipment setup, and helped evaluate student performance on certification requirements.</li>
                     </ul>
                 </div>
             </div>
