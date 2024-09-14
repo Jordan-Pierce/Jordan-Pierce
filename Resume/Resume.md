@@ -1,6 +1,8 @@
 # Jordan Pierce
 
-JordanMakesMaps@gmail.com • (512) 966-3635
+JordanMakesMaps@gmail.com
+
+[🌐 Website](https://www.jordanmakesmaps.com/about) | [💼 LinkedIn](https://www.linkedin.com/in/jordanpatrickpierce/) | [🐙 GitHub](https://www.github.com/Jordan-Pierce) | [📚 Scholar](https://scholar.google.com/citations?user=Z67lvXcAAAAJ&hl=en) | [🎥 YouTube](https://www.youtube.com/@jordanmakesmaps/videos)
 
 ## Summary
 
