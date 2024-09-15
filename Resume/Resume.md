@@ -1,4 +1,4 @@
-# Jordan Pierce
+# [Jordan Pierce](https://www.jordanmakesmaps.com/cv)
 
 JordanMakesMaps@gmail.com
 
