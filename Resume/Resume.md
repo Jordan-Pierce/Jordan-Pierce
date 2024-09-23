@@ -91,26 +91,40 @@ Magna Cum Laude
 - Independently handled data collection, calibration, and operation of scientific instruments.
 - Created digital elevation models and 3D visualizations using ArcGIS software.
 
-## Skills
 
+## Skills
 Pytorch, Ultralytics, Supervision, Sckit-*, AutoDistill, Pandas, OpenCV, Keras, Selenium, ArcGIS, PDAL, GDAL, QGIS, LASTools, Metashape, Open3D, NeRF-Studio, Windows, Linux, Azure, Git
 
+
 ## Research Publications
+- J. Pierce, "Advancements and Applications of AI in Coral Reef Monitoring," Reef Futures. Riviera Maya, Mexico. 2024 (Expected).
 
-1. G. Pavoni, J. Pierce, C. Edwards, M. Corsini, V. Petrovic, P. Cignoni. "Integrating Widespread Coral Reef Monitoring Tools for Managing both Area and Point Annotations." ISPRS Technical Commission II Symposium, 2024.
+- V. Petrovic, J. Pierce, C. Edwards, G. Pavoni, M. Corsini, S. Viehman, S. Sandin, P. Cignoni, & F. Kuester. "Multi-view label classification in Viscore and TagLab for precise and efficient estimates of coral cover using large-area imaging data,". Reef Futures. Riviera Maya, Mexico. 2024 (Expected).
 
-2. S. Cook, S. Rojano, C. Edwards, M. Bollinger, J. Pierce, S. Viehman. "Standard Operating Procedures for the Use of Large-Area Imaging in Tropical Shallow Water Coral Reef Monitoring, Research and Restoration: Applications for Mission: Iconic Reefs Restoration in the Florida Keys National Marine Sanctuary." NOAA Technical Memorandum NOS NCCOS, 2024.
+- G. Pavoni, J. Pierce, C. Edwards, M. Corsini, V. Petrovic, P. Cignoni, "Integrating Widespread Coral Reef Monitoring Tools for Managing both Area and Point Annotations," ISPRS Technical Commission II Symposium, Las Vegas, Nevada, 2024.
 
-3. J. Pierce, Q. Iqbal, E. Martzial. "Absolute Ocean: A Cloud-Based Platform with Automatic Detection of Targets in Sonar Data." Canadian Hydrographic Conference (CHC2022), 2022.
+- S. Cook, S. Rojano, C. Edwards, M. Bollinger, J. Pierce, S. Viehman. "Standard Operating Procedures for the Use of Large-Area Imaging in Tropical Shallow Water Coral Reef Monitoring, Research and Restoration: Applications for Mission: Iconic Reefs Restoration in the Florida Keys National Marine Sanctuary." NOAA Technical Memorandum NOS NCCOS, 2024.
 
-4. J. Pierce, M. Butler, Y. Rzhanov, K. Lowell, J. Dijkstra. "Classifying 3D Models of Coral Reefs Using Structure-from-Motion and Multi-View Semantic Segmentation." Frontiers in Marine Science, 2021.
+- J. Pierce, Q. Iqbal, E. Martzial. "Absolute Ocean: A Cloud-Based Platform with Automatic Detection of Targets in Sonar Data." Canadian Hydrographic Conference (CHC2022), 2022.
 
-5. J. Pierce, Y. Rzhanov, K. Lowell, J. Dijkstra. "Reducing Annotation Times: Semantic Segmentation of Coral Reef Imagery." OCEANS 2020 MTS / IEEE U.S. Gulf Coast - Singapore, 2020.
+- J. Pierce, M. Butler, Y. Rzhanov, K. Lowell, J. Dijkstra. "Classifying 3D Models of Coral Reefs Using Structure-from-Motion and Multi-View Semantic Segmentation." Frontiers in Marine Science, 2021.
 
-6. D.M. Baker, V. Yu, J. Pierce, V. Sheng. "Coral Reef Restoration - Is It Viable for Hong Kong?" The 2nd International Workshop on Eco-Shoreline Designs for Sustainable Coastal Development, 2018.
+- J. Pierce, Y. Rzhanov, K. Lowell, J. Dijkstra. "Reducing Annotation Times: Semantic Segmentation of Coral Reef Imagery." OCEANS 2020 MTS / IEEE U.S. Gulf Coast - Singapore, 2020.
 
-## Honors and Awards
+- D.M. Baker, V. Yu, J. Pierce, V. Sheng. "Coral Reef Restoration - Is It Viable for Hong Kong?" The 2nd International Workshop on Eco-Shoreline Designs for Sustainable Coastal Development, 2018.
+- **J. Pierce**, M. Smith, "A Preliminary Fabric Analysis on the Spatial Distribution of Artifacts from the Ryan-Harley Site (8JE1004)," Texas A&M University Student Research Week, 2016.
+ 
 
+## Other Media Appearances
+
+- University of New Hampshire's 3-Minute Thesis Competition. Presentation. "Automating the Boring Stuff: Using A.I to Map Coral Reefs", April 2020. Featuring **Jordan Pierce**.
+
+- Fisheries and Oceans Canada (DFO). Podcast. Hosted by Andrew Cogswell and Catalina Gomez. "Image Annotation, Machine Learning & AI",  October 2020. Featuring **J. Pierce**.
+
+- You, Me & the Sea. Podcast. Hosted by Kaitlin Van Volkom and Isaiah. "Automating the Boring Stuff: Using A.I to Map Coral Reefs", September 2020. Featuring **J. Pierce**.
+
+
+## Awards and Honors
 - 1st Place, Graduate Research Competition, OCEANS 2020 Conference
 - Norman Miller Prize, OCEANS 2020 Conference
 - 1st Place, 3-Minute Thesis Competition, University of New Hampshire
@@ -121,12 +135,29 @@ Pytorch, Ultralytics, Supervision, Sckit-*, AutoDistill, Pandas, OpenCV, Keras, 
 - Undergraduate Scholarship Recipient, Texas A&M University College of Geosciences
 - Undergraduate Scholarship Recipient, George & Barbara Bush Foundation
 
-## Certifications
 
+## Workshops
+- Earth System Data Science in the Cloud, North Carolina Institute for Climate Studies, 2024. 
+- PSU ARL SAS Workshop, Penn State University, 2024.
+- NCAR Hackathon, National Center for Atmospheric Research, 2023.
+- Coral Restoration Workshop, Rrreefs, 2022.
+- OceanHackWeek, University of Washington, 2019.
+
+
+## Technologies (Often) Used
+- Pytorch, Keras, Tensorflow, Sckit-*
+- Ultralytics, Supervision, AutoDistill
+- Metashape, Open3D, NeRF-Studios
+- ArcGIS, PDAL, GDAL, QGIS, LASTools
+- Git, Azure ML Studio, Windows, Linux
+- Wheels, Fire, Printing Press, Microwaves
+
+
+## Certifications
 PADI Open Water Diver, PADI Advanced Diver, PADI Rescue Diver, NAUI Master Diver, SSI Nitrox Diver, AAUS Scientific Diver, NSS Cavern Diver, Red Cross Lifeguard
 
-## Professional Development
 
+## Professional Development
 - Earth System Data Science in the Cloud, North Carolina Institute for Climate Studies (Fall 2024, Expected)
 - Synthetic Aperture Sonar Short Course, PSU Applied Research Lab (July 2024)
 - Open Hackathon, National Center for Atmospheric Research (March 2023)
