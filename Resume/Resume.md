@@ -97,6 +97,9 @@ Pytorch, Ultralytics, Supervision, Sckit-*, AutoDistill, Pandas, OpenCV, Keras, 
 
 
 ## Research Publications
+
+- A. Mabrouk, C. Menza, C. Goetsch, L. Kline, N. Hunt, J. Pierce, K. Urquhart, K. Edwards, C. Taylor, T. Battista, & M. Taipan. "Innovative Approach to Great Lakes Benthic Mapping: Integrating AUV, ROV and Drop Camera Data with Tator," Great Lakes Research Conference. Detroit, Michigan. 2025 (Expected)
+
 - J. Pierce, "Advancements and Applications of AI in Coral Reef Monitoring," Reef Futures. Riviera Maya, Mexico. 2024 (Expected).
 
 - V. Petrovic, J. Pierce, C. Edwards, G. Pavoni, M. Corsini, S. Viehman, S. Sandin, P. Cignoni, & F. Kuester. "Multi-view label classification in Viscore and TagLab for precise and efficient estimates of coral cover using large-area imaging data,". Reef Futures. Riviera Maya, Mexico. 2024 (Expected).
