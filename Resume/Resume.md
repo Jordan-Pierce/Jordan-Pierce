@@ -96,7 +96,7 @@ Magna Cum Laude
 Pytorch, Ultralytics, Supervision, Sckit-*, AutoDistill, Pandas, OpenCV, Keras, Selenium, ArcGIS, PDAL, GDAL, QGIS, LASTools, Metashape, Open3D, NeRF-Studio, Windows, Linux, Azure, Git
 
 
-## Research Publications
+## Research
 
 - A. Mabrouk, C. Menza, C. Goetsch, L. Kline, N. Hunt, J. Pierce, K. Urquhart, K. Edwards, C. Taylor, T. Battista, & M. Taipan. "Innovative Approach to Great Lakes Benthic Mapping: Integrating AUV, ROV and Drop Camera Data with Tator," Marine Imaging Workshop 2024. Monterey, California. October 7-10, 2024 (Expected).
 
