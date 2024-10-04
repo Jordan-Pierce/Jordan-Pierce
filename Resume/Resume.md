@@ -98,7 +98,7 @@ Pytorch, Ultralytics, Supervision, Sckit-*, AutoDistill, Pandas, OpenCV, Keras, 
 
 ## Research Publications
 
-- A. Mabrouk, C. Menza, C. Goetsch, L. Kline, N. Hunt, J. Pierce, K. Urquhart, K. Edwards, C. Taylor, T. Battista, & M. Taipan. "Innovative Approach to Great Lakes Benthic Mapping: Integrating AUV, ROV and Drop Camera Data with Tator," Great Lakes Research Conference. Detroit, Michigan. 2025 (Expected)
+- A. Mabrouk, C. Menza, C. Goetsch, L. Kline, N. Hunt, J. Pierce, K. Urquhart, K. Edwards, C. Taylor, T. Battista, & M. Taipan. "Innovative Approach to Great Lakes Benthic Mapping: Integrating AUV, ROV and Drop Camera Data with Tator," Marine Imaging Workshop 2024. Monterey, California. October 7-10, 2024 (Expected).
 
 - J. Pierce, "Advancements and Applications of AI in Coral Reef Monitoring," Reef Futures. Riviera Maya, Mexico. 2024 (Expected).
 
