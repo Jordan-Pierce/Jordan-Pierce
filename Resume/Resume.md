@@ -98,11 +98,11 @@ Pytorch, Ultralytics, Supervision, Sckit-*, AutoDistill, Pandas, OpenCV, Keras, 
 
 ## Research
 
+- J. Pierce, "Advancements and Applications of AI in Coral Reef Monitoring," Reef Futures. Riviera Maya, Mexico. December 9-13, 2024 (Expected).
+
+- V. Petrovic, J. Pierce, C. Edwards, G. Pavoni, M. Corsini, S. Viehman, S. Sandin, P. Cignoni, & F. Kuester. "Multi-view label classification in Viscore and TagLab for precise and efficient estimates of coral cover using large-area imaging data,". Reef Futures. Riviera Maya, Mexico. December 9-13, 2024 (Expected).
+
 - A. Mabrouk, C. Menza, C. Goetsch, L. Kline, N. Hunt, J. Pierce, K. Urquhart, K. Edwards, C. Taylor, T. Battista, & M. Taipan. "Innovative Approach to Great Lakes Benthic Mapping: Integrating AUV, ROV and Drop Camera Data with Tator," Marine Imaging Workshop 2024. Monterey, California. October 7-10, 2024 (Expected).
-
-- J. Pierce, "Advancements and Applications of AI in Coral Reef Monitoring," Reef Futures. Riviera Maya, Mexico. 2024 (Expected).
-
-- V. Petrovic, J. Pierce, C. Edwards, G. Pavoni, M. Corsini, S. Viehman, S. Sandin, P. Cignoni, & F. Kuester. "Multi-view label classification in Viscore and TagLab for precise and efficient estimates of coral cover using large-area imaging data,". Reef Futures. Riviera Maya, Mexico. 2024 (Expected).
 
 - G. Pavoni, J. Pierce, C. Edwards, M. Corsini, V. Petrovic, P. Cignoni, "Integrating Widespread Coral Reef Monitoring Tools for Managing both Area and Point Annotations," ISPRS Technical Commission II Symposium, Las Vegas, Nevada, 2024.
 
