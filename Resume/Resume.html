@@ -373,6 +373,46 @@
             font-size: 0.9em;
         }
 
+        .research-subsection {
+            color: #01cdfe;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 30px 0 15px;
+            padding-bottom: 6px;
+            border-bottom: 1px dashed #ff71ce;
+        }
+
+        .research-subsection:first-child {
+            margin-top: 0;
+        }
+
+        .research-source {
+            color: #ff9ff3;
+            font-size: 0.85em;
+            margin-top: 6px;
+            word-break: break-word;
+        }
+
+        .research-source a {
+            color: #ff9ff3;
+            text-decoration: none;
+            border-bottom: 1px dotted #ff9ff3;
+        }
+
+        .research-source a:hover {
+            color: #01cdfe;
+            border-bottom-color: #01cdfe;
+        }
+
+        .research-status {
+            color: #ff71ce;
+            font-size: 0.85em;
+            font-style: italic;
+            margin-top: 6px;
+        }
+
         .media-details {
             display: flex;
             justify-content: space-between;
@@ -662,19 +702,6 @@
             <h2>Professional Experience</h2>
             <div class="section-content">
                 <div class="experience-item">
-                    <h3>NSF Graduate Research Fellow</h3>
-                    <div class="experience-employer">@ UC San Diego</div>
-                    <div class="experience-details">
-                        <span class="experience-location">San Diego, CA</span>
-                        <span class="experience-date">Aug 2025 – Present</span>
-                    </div>
-                    <ul>
-                        <li>Selected as a National Science Foundation Graduate Research Fellow (NSF GRFP) to conduct research at UC San Diego.</li>
-                        <li>Affiliated with the Cultural Heritage Engineering Initiative (CHEI) and the Allen Discovery Center for Neurobiology in Changing Environments (ADC-NiCE).</li>
-                        <li>Engaged in interdisciplinary research and collaboration on-site in San Diego.</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
                     <h3>AI Scientist</h3>
                     <div class="experience-employer">@ CSS Inc. (Contracted to NOAA)</div>
                     <div class="experience-details">
@@ -683,8 +710,6 @@
                     </div>
                     <ul>
                         <li>Utilizing machine learning and computer vision algorithms to reduce the manual annotation of underwater imagery across diverse aquatic environments, from freshwater to deep benthic habitats.</li>
-                        <li>Developed the CoralNet-Toolbox, augmenting the analytical workflow for CoralNet users, while making contributions to TagLab, an open-source annotation software.</li>
-                        <li>Implemented and maintain Click-a-Coral, a crowdsourcing annotation project for object detection in deep benthic ROV imagery.</li>
                         <li>Perform cross-functional collaboration with IT and scientists to establish and maintain code repositories at the division level.</li>
                     </ul>
                 </div>
@@ -815,165 +840,214 @@
 
         <div class="section">
             <h2>Research</h2>
-            
+
             <div class="section-content">
 
+                <div class="research-subsection">Published</div>
 
                 <div class="research-item">
-                    <h3>Deep Learning Assisted Identification Of Crystal And Vesicle Populations In SEM Imagery Of Submarine Volcanic Rocks</h3>
-                    <div class="research-authors">M. Shaw, J. Tomer, <strong>J. Pierce</strong>, A. Soule</div>
+                    <h3>CoralNet-Toolbox: Human-in-the-Loop Annotation and Model Development for Benthic Imagery</h3>
+                    <div class="research-authors"><strong>J. Pierce</strong>, T. Battista, S. Sandin, and F. Kuester</div>
                     <div class="research-details">
-                        <span class="research-venue">American Geophysical Union</span>
-                        <span class="research-date">2025</span>
+                        <span class="research-venue">OCEANS 2026</span>
+                        <span class="research-date">Sep. 21&ndash;24, 2026</span>
                     </div>
-                    <div class="research-location">New Orleans, Louisiana</div>
+                    <div class="research-location">Monterey, CA, USA</div>
+                    <div class="research-status">to be published</div>
                 </div>
 
                 <div class="research-item">
                     <h3>Improved Ground-Truthing and Benthic Habitat Characterization with Machine Learning Models and 3D Photogrammetry</h3>
-                    <div class="research-authors">P.A. Wernette, P. Esselman, A. Geglio, A. Galloway, S. Moradi, <strong>J. Pierce</strong></div>
+                    <div class="research-authors">P. A. Wernette, P. Esselman, A. Geglio, A. Galloway, S. Moradi, and <strong>J. Pierce</strong></div>
                     <div class="research-details">
-                        <span class="research-venue">MTS / IEEE OCEANS 2025</span>
+                        <span class="research-venue">OCEANS 2025 &ndash; Great Lakes</span>
                         <span class="research-date">2025</span>
                     </div>
-                    <div class="research-location">Chicago, Illinois</div>
+                    <div class="research-location">Chicago, IL, USA</div>
+                    <div class="research-source">Art. no. 11245182, doi: <a href="https://doi.org/10.23919/OCEANS59106.2025.11245182" target="_blank">10.23919/OCEANS59106.2025.11245182</a></div>
+                </div>
+
+                <div class="research-item">
+                    <h3>Integrating Widespread Coral Reef Monitoring Tools for Managing both Area and Point Annotations</h3>
+                    <div class="research-authors">G. Pavoni, <strong>J. Pierce</strong>, C. Edwards, M. Corsini, V. Petrovic, and P. Cignoni</div>
+                    <div class="research-details">
+                        <span class="research-venue">Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci., vol. XLVIII-2-2024</span>
+                        <span class="research-date">2024</span>
+                    </div>
+                    <div class="research-location">Las Vegas, NV, USA</div>
+                    <div class="research-source">pp. 327&ndash;333, doi: <a href="https://doi.org/10.5194/isprs-archives-XLVIII-2-2024-327-2024" target="_blank">10.5194/isprs-archives-XLVIII-2-2024-327-2024</a></div>
+                </div>
+
+                <div class="research-item">
+                    <h3>Standard Operating Procedures for the Use of Large-Area Imaging in Tropical Shallow Water Coral Reef Monitoring, Research and Restoration: Applications for Mission: Iconic Reefs Restoration in the Florida Keys National Marine Sanctuary</h3>
+                    <div class="research-authors">S. Cook, S. Rojano, C. Edwards, M. Bollinger, <strong>J. Pierce</strong>, and T. Viehman</div>
+                    <div class="research-details">
+                        <span class="research-venue">NOAA Tech. Memo. NOS NCCOS 320</span>
+                        <span class="research-date">2023</span>
+                    </div>
+                    <div class="research-location">Silver Spring, MD, USA</div>
+                    <div class="research-source">doi: <a href="https://doi.org/10.25923/w8h9-4z75" target="_blank">10.25923/w8h9-4z75</a></div>
+                </div>
+
+                <div class="research-item">
+                    <h3>Classifying 3-D Models of Coral Reefs Using Structure-from-Motion and Multi-View Semantic Segmentation</h3>
+                    <div class="research-authors"><strong>J. Pierce</strong>, M. J. Butler IV, Y. Rzhanov, K. Lowell, and J. A. Dijkstra</div>
+                    <div class="research-details">
+                        <span class="research-venue">Frontiers in Marine Science, vol. 8</span>
+                        <span class="research-date">2021</span>
+                    </div>
+                    <div class="research-source">Art. no. 706674, doi: <a href="https://doi.org/10.3389/fmars.2021.706674" target="_blank">10.3389/fmars.2021.706674</a></div>
+                </div>
+
+                <div class="research-item">
+                    <h3>Reducing Annotation Times: Semantic Segmentation of Coral Reef Survey Images</h3>
+                    <div class="research-authors"><strong>J. Pierce</strong>, Y. Rzhanov, K. Lowell, and J. A. Dijkstra</div>
+                    <div class="research-details">
+                        <span class="research-venue">Global OCEANS 2020: Singapore &ndash; U.S. Gulf Coast</span>
+                        <span class="research-date">2020</span>
+                    </div>
+                    <div class="research-location">Biloxi, MS, USA</div>
+                    <div class="research-source">pp. 1&ndash;9, doi: <a href="https://doi.org/10.1109/IEEECONF38699.2020.9389163" target="_blank">10.1109/IEEECONF38699.2020.9389163</a></div>
+                </div>
+
+                <div class="research-subsection">Presented</div>
+
+                <div class="research-item">
+                    <h3>CoralNet-Toolbox: Automation for Panoptic Segmentation of Benthic Habitat and Large Area Imagery</h3>
+                    <div class="research-authors"><strong>J. Pierce</strong>, T. Battista, S. Sandin, and F. Kuester</div>
+                    <div class="research-details">
+                        <span class="research-venue">16th International Coral Reef Symposium (ICRS 2026), International Coral Reef Society</span>
+                        <span class="research-date">Jul. 19&ndash;24, 2026</span>
+                    </div>
+                    <div class="research-location">New Zealand International Convention Centre, Auckland, New Zealand</div>
+                </div>
+
+                <div class="research-item">
+                    <h3>From in-situ to in-silico: A Brief History of Computer Vision and Coral Reef Ecology</h3>
+                    <div class="research-authors"><strong>J. Pierce</strong> and F. Kuester</div>
+                    <div class="research-details">
+                        <span class="research-venue">Marine Robotics Seminar Series, Queensland University of Technology</span>
+                        <span class="research-date">Jun. 29, 2026</span>
+                    </div>
+                    <div class="research-location">Brisbane, QLD, Australia</div>
+                    <div class="research-source">Invited seminar</div>
+                </div>
+
+                <div class="research-item">
+                    <h3>Deep Learning Assisted Identification of Crystal and Vesicle Populations in SEM Imagery of Submarine Volcanic Rocks</h3>
+                    <div class="research-authors">M. Shaw, J. Tomer, <strong>J. Pierce</strong>, and A. Soule</div>
+                    <div class="research-details">
+                        <span class="research-venue">American Geophysical Union Annual Meeting (AGU25)</span>
+                        <span class="research-date">Dec. 15&ndash;19, 2025</span>
+                    </div>
+                    <div class="research-location">Ernest N. Morial Convention Center, New Orleans, LA, USA</div>
+                    <div class="research-source">Poster presentation, Abstract no. V41B-0060</div>
                 </div>
 
                 <div class="research-item">
                     <h3>CoralNet-Toolbox: Tools for Annotating and Developing Machine Learning Models for Benthic Imagery</h3>
-                    <div class="research-authors"><strong>J. Pierce</strong>, F. Kuester, T. Battista</div>
+                    <div class="research-authors"><strong>J. Pierce</strong>, T. Battista, and F. Kuester</div>
                     <div class="research-details">
-                        <span class="research-venue">7th NOAA AI Workshop</span>
-                        <span class="research-date">2025</span>
+                        <span class="research-venue">7th NOAA Workshop on Generative AI Applications in Environmental Sciences, NOAA Center for AI (NCAI)</span>
+                        <span class="research-date">Sep. 16&ndash;17, 2025</span>
                     </div>
-                    <div class="research-location">Virtual</div>
+                    <div class="research-location">NSF NCAR Center Green Campus, Boulder, CO, USA</div>
                 </div>
 
                 <div class="research-item">
                     <h3>Deep Cluster: Selecting Better Lakebed Images for More Accurate Habitat Mapping</h3>
-                    <div class="research-authors"><strong>J. Pierce</strong>, C. Goetsch, B. Wade</div>
+                    <div class="research-authors"><strong>J. Pierce</strong>, C. Goetsch, and B. Wade</div>
                     <div class="research-details">
-                        <span class="research-venue">NCICS - Earth Systems Data Science in the Cloud: Cohort 4</span>
-                        <span class="research-date">2025</span>
+                        <span class="research-venue">Earth System Data Science in the Cloud (ESDS-4), North Carolina Institute for Climate Studies</span>
+                        <span class="research-date">Spring 2025</span>
                     </div>
-                    <div class="research-location">Asheville, North Carolina</div>
+                    <div class="research-location">Asheville, NC, USA</div>
+                    <div class="research-source">Capstone project presentation</div>
                 </div>
 
                 <div class="research-item">
                     <h3>Emerging Computer Vision Technologies: Applications for Benthic Habitat Imagery</h3>
                     <div class="research-authors"><strong>J. Pierce</strong></div>
                     <div class="research-details">
-                        <span class="research-venue">Reef Futures</span>
-                        <span class="research-date">2024</span>
+                        <span class="research-venue">Reef Futures 2024, Coral Restoration Consortium</span>
+                        <span class="research-date">Dec. 9&ndash;13, 2024</span>
                     </div>
-                    <div class="research-location">Riviera Maya, Mexico</div>
+                    <div class="research-location">Iberostar Resort Complex, Riviera Maya, Mexico</div>
                 </div>
 
                 <div class="research-item">
-                    <h3>Multi-View Label Classification In Viscore, TagLab, CoralNet-Toolbox For Precise And Efficient Estimates Of Coral Cover Using Large-Area Imaging Data</h3>
-                    <div class="research-authors"><strong>J. Pierce</strong>, V. Petrovic, C. Edwards, G. Pavoni, M. Corsini, S. Viehman, S. Sandin, P. Cignoni, & F. Kuester</div>
+                    <h3>Multi-View Label Classification in Viscore, TagLab, and CoralNet-Toolbox for Precise and Efficient Estimates of Coral Cover Using Large-Area Imaging Data</h3>
+                    <div class="research-authors"><strong>J. Pierce</strong>, V. Petrovic, C. Edwards, G. Pavoni, M. Corsini, T. Viehman, S. Sandin, P. Cignoni, and F. Kuester</div>
                     <div class="research-details">
-                        <span class="research-venue">Reef Futures</span>
-                        <span class="research-date">2024</span>
+                        <span class="research-venue">Reef Futures 2024, Coral Restoration Consortium</span>
+                        <span class="research-date">Dec. 9&ndash;13, 2024</span>
                     </div>
-                    <div class="research-location">Riviera Maya, Mexico</div>
-                </div>
-                
-            <div class="research-item"> 
-                <h3>Innovative Approach to Great Lakes Benthic Mapping: Integrating AUV, ROV and Drop Camera Data with Tator</h3> 
-                <div class="research-authors">A. Mabrouk, C. Menza, C. Goetsch, L. Kline, N. Hunt, <strong>J. Pierce</strong>, K. Urquhart, K. Edwards, C. Taylor, T. Battista, & M. Taipan</div> 
-                <div class="research-details"> 
-                    <span class="research-venue">Marine Imaging Workshop</span> 
-                    <span class="research-date">2024</span> </div> 
-                <div class="research-location">Monterey, California</div> </div>
-
-                <div class="research-item">
-                    <h3>Integrating Widespread Coral Reef Monitoring Tools for Managing both Area and Point Annotations</h3>
-                    <div class="research-authors">G. Pavoni, <strong>J. Pierce</strong>, C. Edwards, M. Corsini, V. Petrovic, P. Cignoni</div>
-                    <div class="research-details">
-                        <span class="research-venue">ISPRS Technical Commission II Symposium</span>
-                        <span class="research-date">2024</span>
-                    </div>
-                    <div class="research-location">Las Vegas, Nevada</div>
+                    <div class="research-location">Iberostar Resort Complex, Riviera Maya, Mexico</div>
                 </div>
 
                 <div class="research-item">
-                    <h3>Standard Operating Procedures for the Use of Large-Area Imaging in Tropical Shallow Water Coral Reef Monitoring, Research and Restoration: Applications for Mission: Iconic Reefs Restoration in the Florida Keys National Marine Sanctuary</h3>
-                    <div class="research-authors">S. Cook, S. Rojano, C. Edwards, M. Bollinger, <strong>J. Pierce</strong>, S. Viehman</div>
+                    <h3>Innovative Approach to Great Lakes Benthic Mapping: Integrating AUV, ROV and Drop Camera Data with Tator</h3>
+                    <div class="research-authors">A. Mabrouk, C. Menza, C. Goetsch, L. Kline, N. Hunt, <strong>J. Pierce</strong>, K. Urquhart, K. Edwards, C. Taylor, T. Battista, and M. Taipan</div>
                     <div class="research-details">
-                        <span class="research-venue">NOAA Technical Memorandum NOS NCCOS</span>
-                        <span class="research-date">2024</span>
+                        <span class="research-venue">5th Marine Imaging Workshop (MIW 2024), IEEE Oceanic Engineering Society</span>
+                        <span class="research-date">Oct. 8&ndash;10, 2024</span>
                     </div>
+                    <div class="research-location">Monterey Conference Center, Monterey, CA, USA</div>
                 </div>
 
                 <div class="research-item">
                     <h3>CoralNet-Toolbox: AI and SfM for Coral Reef Imagery Analysis</h3>
-                    <div class="research-authors"><strong>J. Pierce</strong></div>
+                    <div class="research-authors"><strong>J. Pierce</strong> and T. Battista</div>
                     <div class="research-details">
-                        <span class="research-venue">NCAI 5th NOAA AI Workshop</span>
-                        <span class="research-date">2023</span>
+                        <span class="research-venue">5th NOAA Workshop on Leveraging AI in Environmental Sciences, NOAA Center for AI (NCAI)</span>
+                        <span class="research-date">Sep. 19&ndash;21, 2023</span>
                     </div>
                     <div class="research-location">Virtual</div>
                 </div>
 
                 <div class="research-item">
                     <h3>Absolute Ocean: A Cloud-Based Platform with Automatic Detection of Targets in Sonar Data</h3>
-                    <div class="research-authors"><strong>J. Pierce</strong>, Q. Iqbal, E. Martzial</div>
+                    <div class="research-authors"><strong>J. Pierce</strong>, Q. Iqbal, and E. Martzial</div>
                     <div class="research-details">
-                        <span class="research-venue">Canadian Hydrographic Conference (CHC2022)</span>
-                        <span class="research-date">2022</span>
+                        <span class="research-venue">Canadian Hydrographic Conference (CHC 2022), Canadian Hydrographic Association</span>
+                        <span class="research-date">Jun. 6&ndash;9, 2022</span>
                     </div>
-                    <div class="research-location">Gatineau-Ottawa, Canada</div>
-                </div>
-
-                <div class="research-item">
-                    <h3>Classifying 3D Models of Coral Reefs Using Structure-from-Motion and Multi-View Semantic Segmentation</h3>
-                    <div class="research-authors"><strong>J. Pierce</strong>, M. Butler, Y. Rzhanov, K. Lowell, J. Dijkstra</div>
-                    <div class="research-details">
-                        <span class="research-venue">Frontiers in Marine Science</span>
-                        <span class="research-date">2021</span>
-                    </div>
-                </div>
-
-                <div class="research-item">
-                    <h3>Reducing Annotation Times: Semantic Segmentation of Coral Reef Imagery</h3>
-                    <div class="research-authors"><strong>J. Pierce</strong>, Y. Rzhanov, K. Lowell, J. Dijkstra</div>
-                    <div class="research-details">
-                        <span class="research-venue">OCEANS 2020 MTS / IEEE U.S. Gulf Coast - Singapore</span>
-                        <span class="research-date">2020</span>
-                    </div>
-                    <div class="research-location">Virtual</div>
+                    <div class="research-location">Hilton Lac-Leamy, Gatineau, QC, Canada</div>
+                    <div class="research-source">Presented on behalf of Terradepth, Inc.</div>
                 </div>
 
                 <div class="research-item">
                     <h3>Automating the Boring Stuff: A Deep Learning and Computer Vision Workflow for Coral Reef Habitat Mapping</h3>
-                    <div class="research-authors"><strong>J. Pierce</strong></div>
+                    <div class="research-authors"><strong>J. Pierce</strong>, Y. Rzhanov, K. Lowell, M. J. Butler IV, and J. A. Dijkstra</div>
                     <div class="research-details">
-                        <span class="research-venue">UNH Graduate Research Conference</span>
-                        <span class="research-date">2020</span>
+                        <span class="research-venue">Graduate Research Conference, University of New Hampshire Graduate School</span>
+                        <span class="research-date">Apr. 2020</span>
                     </div>
-                    <div class="research-location">Durham, New Hampshire</div>
+                    <div class="research-location">Durham, NH, USA</div>
+                    <div class="research-source">Oral presentation</div>
                 </div>
 
                 <div class="research-item">
-                    <h3>Coral Reef Restoration - Is It Viable for Hong Kong?</h3>
-                    <div class="research-authors">D.M. Baker, V. Yu, <strong>J. Pierce</strong>, V. Sheng</div>
+                    <h3>Coral Reef Restoration &ndash; Is It Viable for Hong Kong?</h3>
+                    <div class="research-authors">D. M. Baker, V. Yu, <strong>J. Pierce</strong>, and V. Sheng</div>
                     <div class="research-details">
-                        <span class="research-venue">The 2nd International Workshop on Eco-Shoreline Designs for Sustainable Coastal Development</span>
+                        <span class="research-venue">2nd International Workshop on Eco-Shoreline Designs for Sustainable Coastal Development, School of Biological Sciences, The University of Hong Kong</span>
                         <span class="research-date">2018</span>
                     </div>
-                    <div class="research-location">Hong Kong, SAR</div>
+                    <div class="research-location">Hong Kong SAR, China</div>
                 </div>
 
                 <div class="research-item">
                     <h3>A Preliminary Fabric Analysis on the Spatial Distribution of Artifacts from the Ryan-Harley Site (8JE1004)</h3>
-                    <div class="research-authors"><strong>J. Pierce</strong>, M. Smith</div>
+                    <div class="research-authors"><strong>J. Pierce</strong> and M. Smith</div>
                     <div class="research-details">
-                        <span class="research-venue">Texas A&M University Student Research Week</span>
-                        <span class="research-date">2016</span>
+                        <span class="research-venue">19th Annual Student Research Week, Texas A&amp;M University</span>
+                        <span class="research-date">Mar. 28 &ndash; Apr. 1, 2016</span>
                     </div>
-                    <div class="research-location">College Station, Texas</div>
+                    <div class="research-location">Memorial Student Center, College Station, TX, USA</div>
+                    <div class="research-source">Poster presentation &mdash; 2nd Place, Undergraduate Division</div>
                 </div>
+
             </div>
         </div>
 
@@ -1007,11 +1081,13 @@
                 </div>
                 <div class="research-item">
                     <h3>Automating the Boring Stuff: Using A.I. to Map Coral Reefs</h3>
-                    <div class="research-authors">Presentation by Jordan Pierce</div>
+                    <div class="research-authors"><strong>J. Pierce</strong></div>
                     <div class="media-details">
-                        <span class="research-venue">University of New Hampshire's 3-Minute Thesis Competition</span>
-                        <span class="research-date">April, 2020</span>
+                        <span class="research-venue">3-Minute Thesis Competition (3MT), University of New Hampshire Graduate School</span>
+                        <span class="research-date">Apr. 2020</span>
                     </div>
+                    <div class="research-location">Durham, NH, USA (Virtual)</div>
+                    <div class="research-source">Oral presentation &mdash; 1st Place, Practice and Final Rounds</div>
                 </div>
             </div>
         </div>
