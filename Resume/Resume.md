@@ -138,6 +138,8 @@ Magna Cum Laude
 
 ### Presented
 
+- **J. Pierce**, T. Battista, S. Sandin, and F. Kuester, "CoralNet-Toolbox: Automation for Panoptic Segmentation of Benthic Habitat and Large Area Imagery," invited presentation and panel discussion at *Using AI to Advance Coral Science and the Ethical Integration of AI into Research*, ICRS Student & Early Career Chapter (SECC), International Coral Reef Society, Virtual, Sep. 3, 2026. [Online video]. Available: [youtube.com/watch?v=_Eg4w0ebio8](https://www.youtube.com/watch?v=_Eg4w0ebio8)
+
 - **J. Pierce**, T. Battista, S. Sandin, and F. Kuester, "CoralNet-Toolbox: Automation for Panoptic Segmentation of Benthic Habitat and Large Area Imagery," presented at the 16th International Coral Reef Symposium (ICRS 2026), International Coral Reef Society, New Zealand International Convention Centre, Auckland, New Zealand, Jul. 19–24, 2026.
 
 - **J. Pierce** and F. Kuester, "From in-situ to in-silico: A Brief History of Computer Vision and Coral Reef Ecology," invited seminar presented at the Marine Robotics Seminar Series, Queensland University of Technology, Brisbane, QLD, Australia, Jun. 29, 2026.
